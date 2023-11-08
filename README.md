@@ -1,37 +1,37 @@
 # Metasploit-for-reconnaissance
-# Metasploit
+## Metasploit
 Metasploit for reconnaissance in pentesting
 
-# AIM:
+## AIM:
 
 To get introduced to Metasploit Framework and to  perform reconnaissance  in pentesting .
 
-## DESIGN STEPS:
+### DESIGN STEPS:
 
-### Step 1:
+#### Step 1:
 
 Install kali linux either in partition or virtual box or in live mode
 
-### Step 2:
+#### Step 2:
 
 Investigate on the various categories of tools as follows:
 
-### Step 3:
+#### Step 3:
 
 Open terminal and try execute some kali linux commands
 
-## PROGRAM:
+### PROGRAM:
 Find out the ip address of the attackers system
 
-## OUTPUT:
+### OUTPUT:
 
 ![244912300-b4069541-3b92-4003-8b62-a8802181e4ba](https://github.com/Vasanthamukilan/Metasploit-for-reconnaissance/assets/119559694/7a76b448-3c3b-43dd-9d59-0884d5454e0f)
 
 
 
-Invoke msfconsole:
+## Invoke msfconsole:
 
-## OUTPUT:
+### OUTPUT:
 
 ![244912302-329df4fa-d60d-40f0-b73f-99eb08ad34c3](https://github.com/Vasanthamukilan/Metasploit-for-reconnaissance/assets/119559694/704dfd42-a5cd-4952-8c09-4c29c9613116)
 
@@ -45,11 +45,11 @@ Type help or a question mark "?" to see the list of all available commands you c
 
 
 
-Port Scanning:
+## Port Scanning:
 Following command is executed for scanning the systems on our local area network with a TCP scan (-sT) looking for open ports between 1 and 1000 (-p1-1000).
 msf >  nmap -sT 192.168.1810/24 -p1-1000
 
-## OUTPUT:
+### OUTPUT:
 
 ![244912303-6ca2d9ae-c61c-4533-95ce-d9ef2861573d](https://github.com/Vasanthamukilan/Metasploit-for-reconnaissance/assets/119559694/f405e0a1-ecdf-44e1-a1df-9ac2296f0a15)
 
@@ -61,7 +61,7 @@ use the db-nmap command to scan and save the results into Metasploit's postgresq
 
 scan the targets with the command db_nmap as follows.
 msf > db_nmap 192.168.181.0/24
-## OUTPUT:
+### OUTPUT:
 
 
 ![244912569-9118b2c2-ea43-4b64-bf5e-33616089e9b8](https://github.com/Vasanthamukilan/Metasploit-for-reconnaissance/assets/119559694/cc3dc847-b1bf-404e-9d80-36039bc9c92a)
@@ -74,7 +74,7 @@ msf > db_nmap 192.168.181.0/24
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules.
 cd /usr/share /metasploit-framework/modules/auxiliary
 kali > ls -l
-## OUTPUT:
+### OUTPUT:
 
 
 ![244912304-8d6772bb-22fc-48ad-8ca6-bfaa916e8274](https://github.com/Vasanthamukilan/Metasploit-for-reconnaissance/assets/119559694/f037211d-896a-4419-8181-c47ec1aea304)
